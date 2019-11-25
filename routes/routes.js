@@ -18,4 +18,11 @@ router.get('/test',(req,res,next)=>{
 })
 
 
+router.get('/',(req,res,next)=>{
+
+        res.send("Hello World")
+
+})
+
+
 module.exports=router;
