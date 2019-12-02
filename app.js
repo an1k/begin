@@ -63,5 +63,5 @@ app.use('/', require('./routes/routes'));
      res.status(500).send('500: Internal Server Error');
   });
   */
-http.createServer(app).listen(process.env.PORT || 8082);
-console.log(process.env.PORT || 8082);
+http.createServer(app).listen(process.env.PORT || 8080);
+console.log(process.env.PORT || 8080);
