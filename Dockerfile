@@ -12,7 +12,7 @@ RUN chown -R node.node /usr/src/app
 USER node
 ENV HOME /home/node
 
-EXPOSE 8082
+EXPOSE 8080
 
 CMD [ "npm", "start" ]
 
