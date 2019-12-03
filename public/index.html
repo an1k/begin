@@ -1,0 +1,232 @@
+<meta charset="utf-8" />
+    
+<title>Nebeskie</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/styles/global.css"/>
+
+
+<title>Welcome to Nebeskie</title>
+
+<!--<link href="/style/lib/bootstrap.css" rel="stylesheet" />-->
+<link href="/styles/lib/bootstrap.min.css" rel="stylesheet" />
+
+<link href="/styles/lib/font-awesome.min.css" rel="stylesheet" />
+<link href="/styles/index.css" rel="stylesheet" />
+<link href="http://fonts.googleapis.com/css?family=Ubuntu:400,300,700" rel='stylesheet' type='text/css' />
+<link href="http://www.w3schools.com/lib/w3.css"/>
+<script src="/js/lib/jquery-1.12.3.min.js"></script>
+<script src="/js/lib/bootstrap.min.js"></script>
+<script src="/js/index.js"></script>
+
+<div class="container-fluid">
+    <!--navigation bar-->
+    <div id="navBar"  style="font-size: 12px!important;padding:0px;margin:0%;border-width:0px; ">
+            <nav id="nebnav" class="navbar navbar-default  text-capitalize navbar-fixed-top">
+                <div class="container">
+                    <div class="row text-right">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header text-right">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            
+                        </div>
+        
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="/"><img src="/img/Singtel_logo.svg.png" width="10%"/></a>
+                            </div>
+                            <ul class="nav navbar-nav navbar-right">
+                                <!--<li class="active"><a href=""></a></li>-->
+                                <li><a class="navbar-brand"  href="/">
+                                    <i class="glyphicon glyphicon-home"></i>
+                                    
+                                    <span class="sr-only">(current)</span>
+                                </a></li>
+                                
+                                <li><a  href="#">TEAM</a></li>
+                                
+                                <li class="dropdown">
+                                    <a s href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PRODUCTS <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a onclick="scrollToProduct();" href="#">Products</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a  href="#">Some product</a></li>
+                                        
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a s href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">DISCOVER <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a onclick="scrollToProduct();" href="#">ABout singtel</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <!--<li><a  href="/blogs/WhyElectricityManagement"></a></li>-->
+                                        
+                                    </ul>
+                                </li>
+                                <!-- <li><a href="#">careers</a></li>-->
+                                <!--<li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">downloads <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a  target="_blank">Product brochure coming soon!!</a></li>
+                                        
+                                        
+                                    </ul>
+                                </li>-->
+                                <!-- 
+                                <li class="dropdown">
+                                    <a style="color:white;" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SUPPORT <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Register your product</a></li>
+                                        <li><a href="#">Installation guide</a></li>
+                                        <li><a href="#">Technical support</a></li>
+                                        <li><a href="#">FAQs</a></li>
+                                       
+                                    </ul>
+                                </li> -->
+                                <li><a  href="#">CONTACT</a></li>
+                                
+                                    <li><a href="#">DASHBOARD</a></li>    
+                                
+                                <li><a  href="/login">LOGIN</a></li>
+                               
+                                
+                                
+                                </ul>
+                            <!--<form class="navbar-form navbar-right">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                                
+                            </form> -->
+                            
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+    
+           
+                </div>
+                <!-- /.container-fluid -->
+                
+            </nav>
+    
+            
+         
+        </div>
+     </div>
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+     <br/>
+<body class="container-fluid">
+<div class="row">
+    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center">
+        <div class="row">
+        <h1><strong>Select the bay you want to check</strong></h1>
+    </div>
+    <div class="row">
+        <div id="display" class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center jumbo"></div>
+    </div>
+    </div>
+    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center">
+    <div class="row">
+        <div onclick="checkBay(1)" class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center panels">
+            <h1>Bay 1</h1>
+        </div>
+        
+        <div onclick="checkBay(2)" class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center panels">
+                <h1>Bay 2</h1>
+        </div>
+        
+    </div>
+    <div class="row">
+        <div onclick="checkBay(3)" class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center panels">
+                <h1>Bay 3</h1>
+        </div>
+        
+        <div onclick="checkBay(4)"  class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center panels">
+                <h1>Bay 4</h1>
+        </div>
+        
+    </div>
+</div>
+
+</div>
+
+</body>    
+
+
+
+<!--footer -->
+<div class="container-fluid">
+    <div class="row footer-top">
+        <div class="col-sm-3 text-center">
+            
+          
+            </div>
+            <div class="col-sm-3 text-center">
+                
+           </div>
+             <div class="col-sm-3 text-center ">
+             
+           </div>
+           
+          <div class="col-sm-3 col-xs-12 text-center border-left">
+            <h4 class="ft-text-title">Contact Us</h4>
+                <div class="address-member">
+                    <p class="member">
+                        <b> +91 9176154739 </b> : 
+                    </p>
+                    <p class="member">
+                        <b> a-anik@singtel.com </b> : 
+                    </p>
+                    
+               </div>
+        </div>
+    </div>
+	<div class="row ft-copyright pt-2 pb-2" style="padding-left:25px;">
+		
+		<div class="col-sm-3 text-pp-crt-rg">Sitemap </div>
+		<div class="col-sm-3 text-pp-crt-rg"><a  data-toggle="modal" data-target="#myModal">Privacy Policy</a>  </div>
+		<div class="col-sm-3 text-pp-crt-rg">Trust & Security</div>
+		
+		<div class="col-sm-3 text-pp-crt">copyright 2019 All  Rights Reserved</div>
+		
+			
+		 <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">Terms and Conditions</h4>
+            </div>
+            <div class="modal-body text-left">
+               
+                    <b> Welcome to Singtel!</b>
+                     
+                    
+                     
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+        </fieldset>
+ 
+
+
+	</div>
+</div>
+<!-- //footer -->

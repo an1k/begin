@@ -1,0 +1,15 @@
+.panels{
+    background-color:#7ecf9c;
+	color: #19323c;
+    font-size: 20px;
+    margin:2px;
+    padding:20px;
+    border-style: solid;
+  border-width: 1px 1px 1px 10px;
+  border-radius: 10px;
+}
+
+.jumbo{
+    color: #19323c;
+    font-size: 40px;
+}
