@@ -17,12 +17,11 @@ router.get('/test',(req,res,next)=>{
 
 })
 
+router.post('/getBayDetails',(req,res,nex)=>{
+        let stuff=req.body
 
-router.get('/',(req,res,next)=>{
-
-        res.send("Hello World")
-
-})
+        res.send(stuff.id)
+});
 
 
 module.exports=router;
