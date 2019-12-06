@@ -8,11 +8,13 @@ function checkBay(v){
         if(status=='success'){
             console.log(data)
             $("#bay_info").fadeIn(3000);
-            $('#display').html(data.name)
+            $("#display").fadeOut(3000);
+            $('#displayID').html(data.id)
             $('#displayResourceNum').html(data.resource_number)
             $('#displayOrganisation').html(data.organisation)
         }else{
-            $('#display').html("There was some error fetching the data")
+            $('#display').fadeIn(3000);
+            
             $("#bay_info").fadeOut(3000);
         }
       
