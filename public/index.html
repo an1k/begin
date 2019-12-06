@@ -124,11 +124,36 @@
      <br/>
      <br/>
 <body class="container-fluid">
+
+    <div class="row" >
+            <div class="row">
+                    <h1><strong>Select the bay you want to check</strong></h1>
+                </div>
+    <div class="row">
+        <div onclick="checkBay(1)" class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center panels">
+            <h1>Bay 1</h1>
+        </div>
+        
+        <div onclick="checkBay(2)" class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center panels">
+                <h1>Bay 2</h1>
+        </div>
+        
+   
+        <div onclick="checkBay(3)" class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center panels">
+                <h1>Bay 3</h1>
+        </div>
+        
+        <div onclick="checkBay(4)"  class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center panels">
+                <h1>Bay 4</h1>
+        </div>
+        
+    </div>
+    </div>
 <div class="row">
-    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center">
+    <div id="left_panel" class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center">
         
     <div class="row">
-        
+
         <div id="display" class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-left jumbo"></div>
     </div>
     
@@ -142,7 +167,7 @@
             <div id="displayResourceNum" class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-left jumbo"></div>
         </div>
     </div>
-    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center">
+    <div id="right_panel" class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text-center">
             <div class="row">
                     <h1><strong>Select the bay you want to check</strong></h1>
                 </div>
