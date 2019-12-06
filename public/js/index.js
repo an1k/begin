@@ -1,12 +1,15 @@
 function checkBay(v){
+    console.log(v)
     $.post("/getBayDetails",
     {
-      id: v,
-      type: "bay"
+      "bayID": v
     },
     function(data, status){
         if(status=='success'){
-            $('#display').html(data)
+            console.log(data)
+            $('#display').html(data.name)
+            $('#displayResourceNum').html(data.resource_number)
+            $('#displayOrganisation').html(data.organisation)
         }else{
             $('#display').html("There was some error fetching the data")
         }
