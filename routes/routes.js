@@ -21,10 +21,7 @@ router.get('/test',(req,res,next)=>{
 router.post('/getBayDetails',(req,res,next)=>{
         let id=req.body.bayID
 
-       //backendBridge.getBayDetailsByID(id)
-       axios.post('http://localhost:8082/getBayDetails',{
-        "bayID":id
-       }).then(response=>{
+       backendBridge.getBayDetailsByID(id).then(response=>{
                console.log(response.data)
                 res.send(response.data)
         }).catch(error=>{
