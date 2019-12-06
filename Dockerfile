@@ -12,7 +12,7 @@ RUN chown -R node.node /usr/src/app
 USER node
 ENV HOME /home/node
 ENV BCKPORT 8081
-ENV BCKURL test.example.com
+ENV BCKURL http://begin-backend-git-testproject.apps.openshift-test.accenturemywizard-aaam.com.au/
 ENV PORT 8080
 EXPOSE 8080
 
