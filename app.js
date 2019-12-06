@@ -21,6 +21,8 @@ const session={
   }
 
 
+let port = 8080
+
   const config = {
     origin: 'http://localhost:8080',
     credentials: true,
@@ -64,5 +66,5 @@ app.use('/', require('./routes/routes'));
      res.status(500).send('500: Internal Server Error');
   });
   */
-http.createServer(app).listen(process.env.PORT || 8080);
-console.log(process.env.PORT || 8080);
+http.createServer(app).listen(process.env.PORT || port);
+console.log(process.env.PORT || port);

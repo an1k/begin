@@ -31,5 +31,18 @@ router.post('/getBayDetails',(req,res,next)=>{
         
 });
 
+router.post('/getResourceDetails',(req,res,next)=>{
+        let id=req.body.bayID
+
+       backendBridge.getResourceDetailsByID(id).then(response=>{
+               console.log(response.data)
+                res.send(response.data)
+        }).catch(error=>{
+                console.log(error)
+                res.send(error)
+        })
+        
+});
+
 
 module.exports=router;
